@@ -5,7 +5,6 @@ use warnings;
 package Dist::Zilla::Plugin::SynopsisTests;
 # ABSTRACT: release tests for synopses
 use Moose;
-use Test::Synopsis;
 extends 'Dist::Zilla::Plugin::InlineFiles';
 
 __PACKAGE__->meta->make_immutable;
