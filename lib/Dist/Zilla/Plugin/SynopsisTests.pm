@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Plugin::SynopsisTests;
-# ABSTRACT: release tests for synopses
+# ABSTRACT: Release tests for synopses
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
 
@@ -26,7 +26,7 @@ In C<dist.ini>:
 =head1 DESCRIPTION
 
 This is an extension of L<Dist::Zilla::Plugin::InlineFiles>, providing the
-following files
+following file:
 
   xt/release/synopsis.t - a standard Test::Synopsis test
 
