@@ -4,43 +4,26 @@ use warnings;
 
 package Dist::Zilla::Plugin::SynopsisTests;
 # ABSTRACT: Release tests for synopses
+# VERSION
 use Moose;
-extends 'Dist::Zilla::Plugin::InlineFiles';
-
-__PACKAGE__->meta->make_immutable;
-no Moose;
-1;
-
-=begin :prelude
-
-=for test_synopsis
-1;
-__END__
-
-=end :prelude
+extends 'Dist::Zilla::Plugin::Test::Synopsis';
 
 =head1 SYNOPSIS
 
 In C<dist.ini>:
 
-    [SynopsisTests]
+    [Test::Synopsis]
 
-=head1 DESCRIPTION
-
-This is an extension of L<Dist::Zilla::Plugin::InlineFiles>, providing the
-following file:
-
-  xt/release/synopsis.t - a standard Test::Synopsis test
+=for test_synopsis
+1;
+__END__
 
 =cut
 
-__DATA__
-___[ xt/release/synopsis.t ]___
-#!perl
+before register_component => sub {
+    warn '!!! [SynopsisTests] is deprecated and will be removed in a future release; replace it with [Test::Synopsis]';
+};
 
-use Test::More;
-
-eval "use Test::Synopsis";
-plan skip_all => "Test::Synopsis required for testing synopses"
-  if $@;
-all_synopsis_ok('lib');
+__PACKAGE__->meta->make_immutable;
+no Moose;
+1;
