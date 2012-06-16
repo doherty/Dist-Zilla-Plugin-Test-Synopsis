@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+2.000002  2012-06-16
     - Declare Dist::Zilla dependency
     - Use a decimal version number
 
