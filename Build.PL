@@ -27,12 +27,13 @@ my %module_build_args = (
     "Mike Doherty <doherty\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-Plugin-Test-Synopsis",
-  "dist_version" => "2.0.1",
+  "dist_version" => "2.000002",
   "license" => "perl",
   "module_name" => "Dist::Zilla::Plugin::Test::Synopsis",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
+    "Dist::Zilla" => 4,
     "Dist::Zilla::Plugin::InlineFiles" => 0,
     "Moose" => 0,
     "Test::Synopsis" => 0,
