@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::Plugin::Test::Synopsis - Release tests for synopses
 
 VERSION
-    version 2.000002
+    version 2.000003
 
 SYNOPSIS
     In "dist.ini":
