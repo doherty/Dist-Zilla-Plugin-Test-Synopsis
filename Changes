@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - Check only for our own deprecation warnings
 
 2.000002  2012-06-16
     - Declare Dist::Zilla dependency
