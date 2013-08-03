@@ -22,8 +22,3 @@ ok(
     (grep { $_ eq 'xt/release/synopsis.t' } @xtests),
     'synopsis.t exists'
 ) or diag explain \@xtests;
-
-END { # Remove (empty) dir created by building the dists
-    require File::Path;
-    File::Path::rmtree('tmp');
-}
