@@ -4,7 +4,7 @@ Dist::Zilla::Plugin::Test::Synopsis - Release tests for synopses
 
 # VERSION
 
-version 2.000003
+version 2.000004
 
 # SYNOPSIS
 
