@@ -7,6 +7,7 @@ package Dist::Zilla::Plugin::Test::Synopsis;
 # VERSION
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
+with 'Dist::Zilla::Role::PrereqSource';
 
 =head1 SYNOPSIS
 
@@ -26,6 +27,22 @@ following file:
   xt/release/synopsis.t - a standard Test::Synopsis test
 
 =cut
+
+
+# Register the test prereqs as "develop requires"
+# so they will be listed in "dzil listdeps --author"
+sub register_prereqs {
+    my ($self) = @_;
+
+    $self->zilla->register_prereqs(
+        {
+            type  => 'requires',
+            phase => 'develop',
+        },
+        'Test::Synopsis' => '0',
+    );
+}
+
 
 __PACKAGE__->meta->make_immutable;
 no Moose;
