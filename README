@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::Plugin::Test::Synopsis - Release tests for synopses
 
 VERSION
-    version 2.000004
+    version 2.000005
 
 SYNOPSIS
     In "dist.ini":
@@ -39,6 +39,8 @@ AUTHORS
     *   Marcel Grünauer <marcel@cpan.org>
 
     *   Mike Doherty <doherty@cpan.org>
+
+    *   Olivier Mengué <dolmen@cpan.org>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2010 by Mike Doherty.
