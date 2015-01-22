@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+2.000006  2015-01-22
   - Remove dependency on Moose::Autobox in tests [kentnl; GH #4]
 
 2.000005  2014-08-03
