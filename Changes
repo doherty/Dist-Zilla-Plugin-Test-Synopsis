@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+  - Make this an author test instead of a release test [autarch: GH #5]
 
 2.000006  2015-01-22
   - Remove dependency on Moose::Autobox in tests [kentnl; GH #4]

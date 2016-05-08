@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Plugin::Test::Synopsis;
-# ABSTRACT: Release tests for synopses
+# ABSTRACT: Author tests for synopses
 # VERSION
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
@@ -24,7 +24,7 @@ __END__
 This is an extension of L<Dist::Zilla::Plugin::InlineFiles>, providing the
 following file:
 
-  xt/release/synopsis.t - a standard Test::Synopsis test
+  xt/author/synopsis.t - a standard Test::Synopsis test
 
 =cut
 
@@ -49,7 +49,7 @@ no Moose;
 1;
 
 __DATA__
-___[ xt/release/synopsis.t ]___
+___[ xt/author/synopsis.t ]___
 #!perl
 
 use Test::Synopsis;
