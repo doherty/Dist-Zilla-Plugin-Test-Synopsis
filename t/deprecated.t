@@ -25,6 +25,6 @@ $tzil->build;
 
 my @xtests = map $_->name =~ m{^xt/} ? $_->name : (), @{ $tzil->files };
 ok(
-    (grep { $_ eq 'xt/release/synopsis.t' } @xtests),
+    (grep { $_ eq 'xt/author/synopsis.t' } @xtests),
     'synopsis.t exists'
 ) or diag explain \@xtests;
