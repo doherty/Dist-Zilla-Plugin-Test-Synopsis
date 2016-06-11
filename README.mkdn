@@ -1,10 +1,10 @@
 # NAME
 
-Dist::Zilla::Plugin::Test::Synopsis - Release tests for synopses
+Dist::Zilla::Plugin::Test::Synopsis - Author tests for synopses
 
 # VERSION
 
-version 2.000006
+version 2.000007
 
 # SYNOPSIS
 
@@ -17,7 +17,7 @@ In `dist.ini`:
 This is an extension of [Dist::Zilla::Plugin::InlineFiles](https://metacpan.org/pod/Dist::Zilla::Plugin::InlineFiles), providing the
 following file:
 
-    xt/release/synopsis.t - a standard Test::Synopsis test
+    xt/author/synopsis.t - a standard Test::Synopsis test
 
 # AVAILABILITY
 

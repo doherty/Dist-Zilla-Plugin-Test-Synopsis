@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+2.000007  2016-06-11
   - Make this an author test instead of a release test [autarch: GH #5]
 
 2.000006  2015-01-22
